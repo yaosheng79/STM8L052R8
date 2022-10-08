@@ -27,18 +27,18 @@
 # Segment configuration - section reserved for STVD
 #<BEGIN SEGMENT_CONF>
 # Segment Code,Constants:
-+seg .const -b 0x8080 -m 0xff80  -n .const -it 
-+seg .text -a .const  -n .text 
++seg .const -b 0x8080 -m 0xff80 -n .const -it
++seg .text -a .const -n .text
 # Segment Eeprom:
-+seg .eeprom -b 0x1000 -m 0x100  -n .eeprom 
++seg .eeprom -b 0x1000 -m 0x100 -n .eeprom
 # Segment Zero Page:
-+seg .bsct -b 0x0 -m 0x100  -n .bsct 
-+seg .ubsct -a .bsct  -n .ubsct 
-+seg .bit -a .ubsct  -n .bit -id 
-+seg .share -a .bit  -n .share -is 
++seg .bsct -b 0x0 -m 0x100 -n .bsct
++seg .ubsct -a .bsct -n .ubsct
++seg .bit -a .ubsct -n .bit -id
++seg .share -a .bit -n .share -is
 # Segment Ram:
-+seg .data -b 0x100 -m 0xcff  -n .data 
-+seg .bss -a .data  -n .bss 
++seg .data -b 0x100 -m 0xcff -n .data
++seg .bss -a .data -n .bss
 #<END SEGMENT_CONF>
 
 
@@ -52,7 +52,34 @@ crtsi0.sm8
 #<BEGIN OBJECT_FILES>
 Debug\main.o
 Debug\stm8l15x_it.o
+Debug\stm8l15x_adc.o
+Debug\stm8l15x_aes.o
+Debug\stm8l15x_beep.o
+Debug\stm8l15x_clk.o
+Debug\stm8l15x_comp.o
+Debug\stm8l15x_dac.o
+Debug\stm8l15x_dma.o
+Debug\stm8l15x_exti.o
+Debug\stm8l15x_flash.o
 Debug\stm8l15x_gpio.o
+Debug\stm8l15x_i2c.o
+Debug\stm8l15x_irtim.o
+Debug\stm8l15x_itc.o
+Debug\stm8l15x_iwdg.o
+Debug\stm8l15x_lcd.o
+Debug\stm8l15x_pwr.o
+Debug\stm8l15x_rst.o
+Debug\stm8l15x_rtc.o
+Debug\stm8l15x_spi.o
+Debug\stm8l15x_syscfg.o
+Debug\stm8l15x_tim1.o
+Debug\stm8l15x_tim2.o
+Debug\stm8l15x_tim3.o
+Debug\stm8l15x_tim4.o
+Debug\stm8l15x_tim5.o
+Debug\stm8l15x_usart.o
+Debug\stm8l15x_wfe.o
+Debug\stm8l15x_wwdg.o
 #<END OBJECT_FILES>
 
 
