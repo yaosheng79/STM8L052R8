@@ -1,1 +1,1 @@
-"# STM8L052R8" 
+# STVD template for STM8L052R8
